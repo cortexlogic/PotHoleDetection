@@ -21,6 +21,7 @@ learn = cnn_learner(data, resnet18, metrics=accuracy)
 learn.lr_find()
 learn.recorder.plot()
 
+
 learn.fit_one_cycle(5, 1e-2)
 
 learn.unfreeze()
