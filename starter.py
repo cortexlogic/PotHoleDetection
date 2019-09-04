@@ -1,3 +1,4 @@
+# %%
 from pathlib import Path
 
 # set callbacks=[SaveModelCallback(learn, every='epoch', monitor='accuracy')])
@@ -10,6 +11,8 @@ from fastai.vision.learner import cnn_learner
 from fastai.vision.models import resnet18
 from fastai.vision.transform import ResizeMethod, get_transforms
 
+
+# %%
 from radam import RAdam
 from ranger import Ranger
 
